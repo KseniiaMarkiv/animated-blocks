@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&EB+Garamond:ital@0;1&Dancing+Script&family=Permanent+Marker&family=Poppins&family=Raleway:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body#colorBody {
+    background-color: #2d2c6c;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#GenerateButton {
+    position: absolute;
+    background-color: transparent;
+    /* border: solid 3px #ffc107; */
+    color: #ffc107;
+    border-radius: 5px;
+    width: 490px;
+    height: 240px;
+    /* -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 2px 5px 16px 0px rgba(255, 255, 255, 0.73);
+    box-shadow: 2px 5px 16px 0px #0B325E, 2px 5px 16px 0px rgba(255, 255, 255, 0.73); */
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: "Pacifico";
+    letter-spacing: 0.2rem;
+    bottom: 10px;
+}
+
+.link-bottom {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+}
+
+
+/* #GenerateButton:hover {
+    background-color: #ffc107;
+    color: rgba(68, 68, 68, 0.9);
+} */
+
+
+/* animate blocks */
+
+.container-top {
+    width: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.block {
+    position: absolute;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.block:nth-child(3n+2) {
+    background: #4443A3;
+}
+
+.block:nth-child(3n+3) {
+    background: rgba(68, 68, 68, 0.9);
+}
+
+
+/* END animate blocks */
