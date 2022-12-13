@@ -19,20 +19,10 @@ function generate() {
         }
     })
 }
-var btn_generator = document.getElementById('GenerateButton');
+var btn_generator = document.getElementById('colorBody');
 var count = 1;
 btn = setInterval(function() {
     btn_generator.click();
     if (count >= 3) clearInterval(btn);
     count++;
 }, 1000);
-
-// function stopSetInterval() {
-//     clearInterval(btn);
-//     btn = null;
-// }
-// var btn_stop_generator = document.getElementById('StopGenerateButton');
-// setInterval(function() {
-//     btn_stop_generator.click();
-// }, 100);   
-// $("body").trigger("click");       - click everywhere on body
